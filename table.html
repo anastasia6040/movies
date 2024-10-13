@@ -1,0 +1,408 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <title>Таблица фильмов</title>
+</head>
+<body>
+    <p><a href="index.html" target="_blank">Лучшие фильмы</a></p>
+    <p><a href="table.html">Список лучших фильмов</a></p>
+    <hr>
+
+    <details>
+        <summary>График</summary>
+        <form>
+            <p>
+                Значение по оси ОХ:<br>
+                <input type="radio" name="gender" value="w" checked> Дата выхода <br>
+                <input type="radio" name="gender" value="m"> Жанр <br>
+                <input type="radio" name="gender" value="m"> Страна
+            </p>
+        </form>
+        <form>
+            <p>
+                Результат:<br>
+                <input type="radio" name="gender" value="w" checked> Количество фильмов <br>
+            </p>
+        </form>
+        <form>
+            <input type="button" value="Построить">
+        </form>
+        <p>Здесь будет график</p>
+    </details>
+
+    <details>
+        <summary>Фильтр</summary>
+        <form>
+            Название:
+            <input type="text">
+        </form>
+        <br>
+        <form>
+            Дата выхода:
+            <input type="text">
+        </form>
+        <br>
+        <form>
+            Жанр:
+            <input type="text">
+        </form>
+        <br>
+        <form>
+            Страна:
+            <input type="text">
+        </form>
+        <br>
+        <form>
+            <input type="button" value="Найти">
+        </form>
+    </details>
+
+    <details>
+        <summary>Сортировка</summary>
+        Первый
+        <select>
+            <option value="0"> Нет </option>
+            <option value="1" selected> Да </option>
+        </select>
+        <form>
+            по убыванию?
+            <input type="checkbox">
+        </form>
+        <br>
+        Второй
+        <select>
+            <option value="0"> Нет </option>
+            <option value="1" selected> Да </option>
+        </select>
+        <form>
+            по убыванию?
+            <input type="checkbox">
+        </form>
+        <br>
+        Третий
+        <select>
+            <option value="0"> Нет </option>
+            <option value="1" selected> Да </option>
+        </select>
+        <form>
+            по убыванию?
+            <input type="checkbox">
+        </form>
+        <br>
+        <form>
+            <input type="button" value="Сортировать">
+        </form>
+        <br>
+    </details>
+
+    <table border="1" cellspacing="0">
+        <tr>
+            <th>Название</th>
+            <th>Дата выхода</th>
+            <th>Жанр</th>
+            <th>Страна</th>
+        </tr>
+        <tr>
+            <td>Побег из Шоушенка</td>
+            <td>1994</td>
+            <td>драма</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>Крёстный отец</td>
+            <td>1972</td>
+            <td>детектив</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>Тёмный рыцарь</td>
+            <td>2008</td>
+            <td>боевик</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>Крёстный отец 2</td>
+            <td>1974</td>
+            <td>детектив</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>12 разгневанных мужчин</td>
+            <td>1957</td>
+            <td>детектив</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>Властелин колец: Возвращение короля</td>
+            <td>2003</td>
+            <td>боевик</td>
+            <td>Новая Зеландия</td>
+        </tr>
+        <tr>
+            <td>Список Шиндлера</td>
+            <td>1993</td>
+            <td>байопик</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>Криминальное чтиво</td>
+            <td>1994</td>
+            <td>детектив</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>Властелин колец: Братство Кольца</td>
+            <td>2001</td>
+            <td>боевик</td>
+            <td>Новая Зеландия</td>
+        </tr>
+        <tr>
+            <td>Хороший, плохой, злой</td>
+            <td>1966</td>
+            <td>приключение</td>
+            <td>Италия</td>
+        </tr>
+        <tr>
+            <td>Форрест Гамп</td>
+            <td>1994</td>
+            <td>драма</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>Властелин колец: Две крепости</td>
+            <td>2002</td>
+            <td>боевик</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>Бойцовский клуб</td>
+            <td>1999</td>
+            <td>драма</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>Начало</td>
+            <td>2010</td>
+            <td>боевик</td>
+            <td>Великобритания</td>
+        </tr>
+        <tr>
+            <td>Звёздные войны. Эпизод V: Империя наносит ответный удар</td>
+            <td>1980</td>
+            <td>боевик</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>Матрица</td>
+            <td>1999</td>
+            <td>боевик</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>Славные парни</td>
+            <td>1990</td>
+            <td>байопик</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>Пролетая над гнездом кукушки</td>
+            <td>1975</td>
+            <td>драма</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>Интерстеллар</td>
+            <td>2014</td>
+            <td>приключение</td>
+            <td>Великобритания</td>
+        </tr>
+        <tr>
+            <td>Семь</td>
+            <td>1995</td>
+            <td>детектив</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>Эта прекрасная жизнь</td>
+            <td>1946</td>
+            <td>драма</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>Семь самураев</td>
+            <td>1954</td>
+            <td>боевик</td>
+            <td>Япония</td>
+        </tr>
+        <tr>
+            <td>Молчание ягнят</td>
+            <td>1991</td>
+            <td>детектив</td>
+            <td>Япония</td>
+        </tr>
+        <tr>
+            <td>Спасти рядового Райана</td>
+            <td>1998</td>
+            <td>драма</td>
+            <td>Япония</td>
+        </tr>
+        <tr>
+            <td>Город Бога</td>
+            <td>2002</td>
+            <td>детектив</td>
+            <td>Бразилия</td>
+        </tr>
+        <tr>
+            <td>Жизнь прекрасна</td>
+            <td>1997</td>
+            <td>комедия</td>
+            <td>Италия</td>
+        </tr>
+        <tr>
+            <td>Зелёная миля</td>
+            <td>1999</td>
+            <td>детектив</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>Терминатор 2: Судный день</td>
+            <td>1991</td>
+            <td>боевик</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>Звёздные войны. Эпизод IV: Новая надежда</td>
+            <td>1977</td>
+            <td>боевик</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>Назад в будущее</td>
+            <td>1985</td>
+            <td>приключение</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>Унесённые призраками</td>
+            <td>2001</td>
+            <td>мультфильм</td>
+            <td>Япония</td>
+        </tr>
+        <tr>
+            <td>Пианист</td>
+            <td>2002</td>
+            <td>байопик</td>
+            <td>Польша</td>
+        </tr>
+        <tr>
+            <td>Паразиты</td>
+            <td>2019</td>
+            <td>драма</td>
+            <td>Южная Корея</td>
+        </tr>
+        <tr>
+            <td>Психо</td>
+            <td>1960</td>
+            <td>хоррор</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>Гладиатор</td>
+            <td>2000</td>
+            <td>боевик</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>Король Лев</td>
+            <td>1994</td>
+            <td>мультфильм</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>Человек-паук: Паутина вселенных</td>
+            <td>2023</td>
+            <td>мультфильм</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>Отступники</td>
+            <td>2006</td>
+            <td>детектив</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>Одержимость</td>
+            <td>2014</td>
+            <td>драма</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>Американская история Икс</td>
+            <td>1998</td>
+            <td>детектив</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>Могила светлячков</td>
+            <td>1988</td>
+            <td>мультфильм</td>
+            <td>Япония</td>
+        </tr>
+        <tr>
+            <td>Леон</td>
+            <td>1994</td>
+            <td>боевик</td>
+            <td>Франция</td>
+        </tr>
+        <tr>
+            <td>Престиж</td>
+            <td>2006</td>
+            <td>драма</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>Харакири</td>
+            <td>1962</td>
+            <td>боевик</td>
+            <td>Япония</td>
+        </tr>
+        <tr>
+            <td>Подозрительные лица</td>
+            <td>1995</td>
+            <td>детектив</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>Касабланка</td>
+            <td>1942</td>
+            <td>драма</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>Дюна: Часть вторая</td>
+            <td>2024</td>
+            <td>боевик</td>
+            <td>Америка</td>
+        </tr>
+        <tr>
+            <td>1+1</td>
+            <td>2011</td>
+            <td>байопик</td>
+            <td>Франция</td>
+        </tr>
+        <tr>
+            <td>Новый кинотеатр «Парадизо»</td>
+            <td>1988</td>
+            <td>драма</td>
+            <td>Италия</td>
+        </tr>
+        <tr>
+            <td>Новые времена</td>
+            <td>1936</td>
+            <td>комелия</td>
+            <td>Америка</td>
+        </tr>
+    </table>
+</body>
+</html>
