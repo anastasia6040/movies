@@ -14,15 +14,17 @@
         <form>
             <p>
                 Значение по оси ОХ:<br>
-                <input type="radio" name="gender" value="w" checked> Дата выхода <br>
-                <input type="radio" name="gender" value="m"> Жанр <br>
-                <input type="radio" name="gender" value="m"> Страна
+                <input type="radio" name="data" value="w"> Дата выхода <br>
+                <input type="radio" name="data" value="m"> Жанр <br>
+                <input type="radio" name="data" value="m"> Страна
             </p>
         </form>
         <form>
             <p>
                 Результат:<br>
-                <input type="radio" name="gender" value="w" checked> Количество фильмов <br>
+                <input type="radio" name="gender" value="w"> Количество фильмов <br>
+                <input type="radio" name="gender" value="w"> Минимальный год <br>
+                <input type="radio" name="gender" value="w"> Максимальный год <br>
             </p>
         </form>
         <form>
@@ -39,7 +41,9 @@
         </form>
         <br>
         <form>
-            Дата выхода:
+            Дата выхода: от
+            <input type="text">
+            до
             <input type="text">
         </form>
         <br>
@@ -60,30 +64,39 @@
 
     <details>
         <summary>Сортировка</summary>
-        Первый
+        Первый уровень
         <select>
             <option value="0"> Нет </option>
-            <option value="1" selected> Да </option>
+            <option value="1"> Название </option>
+            <option value="2" selected> Дата </option>
+            <option value="3" selected> Жанр </option>
+            <option value="4" selected> Страна </option>
         </select>
         <form>
             по убыванию?
             <input type="checkbox">
         </form>
         <br>
-        Второй
+        Второй уровень
         <select>
             <option value="0"> Нет </option>
-            <option value="1" selected> Да </option>
+            <option value="1"> Название </option>
+            <option value="2" selected> Дата </option>
+            <option value="3" selected> Жанр </option>
+            <option value="4" selected> Страна </option>
         </select>
         <form>
             по убыванию?
             <input type="checkbox">
         </form>
         <br>
-        Третий
+        Третий уровень
         <select>
             <option value="0"> Нет </option>
-            <option value="1" selected> Да </option>
+            <option value="1"> Название </option>
+            <option value="2" selected> Дата </option>
+            <option value="3" selected> Жанр </option>
+            <option value="4" selected> Страна </option>
         </select>
         <form>
             по убыванию?
