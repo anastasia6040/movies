@@ -1,5 +1,5 @@
 ﻿.search {
-    text-align: center;
+    text-align: right;
     background: grey;
 }
 
@@ -17,72 +17,137 @@
 }
 
 .header {
-    background-image: url(images/header5.jpg);
-    height: 200px;
-    text-align: right;
+    display: grid;
+    background: LightGrey;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-areas:
+        "name . link1 link2 link3 . .";
 }
 
-.title {
-    color: white;
+.header > div {
+    font-size: 23px;
+    padding: 10px 5px;
+    margin: 8px;
+    white-space: nowrap;
     text-align: center;
-    margin-top: 80px;
-    font-size: 40px;
 }
 
 .header a {
-    color: white;
-    font-size: large;
+    text-decoration: none;
+    color: black;
 }
 
-.main {
-    margin: 0 100px;
+.title {
+    grid-area: name;
+}
+
+.header > .header-link1 {
+    grid-area: link1;
+    background: grey;
+}
+
+.header > .header-link2 {
+    grid-area: link2;
+}
+
+.header > .header-link3 {
+    grid-area: link3;
+}
+
+.gallery {
+    display: grid;
+    width: 40%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.gallery div {
     text-align: center;
-    padding: 10px;
 }
 
-.description {
-    display: block;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+.img1 {
+    grid-column: 1;
+    grid-row: 1/4;
 }
 
-.Shawshank {
-    display: inline-block;
-    box-sizing: border-box;
-    width: 66.66%;
-    float: left;
-    border: 1px solid;
-    padding: 10px;
+.content1 {
+    text-align: center;
+    border: solid 1px grey;
+    margin: 15px auto;
+    font-size: 20px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
-.father {
-    display: inline-block;
-    box-sizing: border-box;
-    width: 33.33%;
-    border: 1px solid;
-    padding: 10px;
+.content2 {
+    text-align: center;
+    border: solid 1px grey;
+    margin: 15px auto;
+    font-size: 20px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.content3 {
+    text-align: center;
+    border: solid 1px grey;
+    margin: 15px auto;
+    font-size: 20px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
 .movie-name {
     font-weight: bold;
 }
 
-.images {
-    display: inline-block;
-    box-sizing: border-box;
-    background: #F9F6EE;
-    width: 50%;
-    float: left;
-    overflow: hidden;
-    padding: 10px;
+.bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: grey;
+    justify-content: space-between;
 }
 
-.bottom {
-    display: inline-block;
+.bottom div {
+    padding: 5px;
 }
 
 .bottom-mail {
-    display: inline-block;
-    float: right;
+    text-align: right;
+}
+
+@media all and (max-width: 600px) {
+    .search-text-area {
+        display: inline;
+        width: 150px;
+        height: 22px;
+        margin: 5px;
+    }
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .header > div {
+        width: 45%;
+        font-size: 23px;
+        padding: 10px 5px;
+        margin: 8px auto;
+        text-align: center;
+        white-space: nowrap;
+    }
+    .gallery {
+        display: flex;
+        width: 40%;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .gallery img {
+        height: 250px;
+        
+        
+    }
 }
